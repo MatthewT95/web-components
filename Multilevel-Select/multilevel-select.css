@@ -1,0 +1,45 @@
+.sel-collapse-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.sel-parent:not(:has(:checked))~.sel-collapse {
+    display: none;
+}
+
+.sel-collapse>option {
+    display: none;
+}
+
+/* .sel-collapse[data-filter-value="$value"]>option[data-filter-value="$value"] */
+.sel-collapse[data-filter-value="A"]>option[data-filter-value="A"] {
+    display: unset;
+}
+
+.sel-collapse[data-filter-value="B"]>option[data-filter-value="B"] {
+    display: unset;
+}
+
+.sel-collapse[data-filter-value="A.1"]>option[data-filter-value="A.1"] {
+    display: unset;
+}
+
+.sel-collapse[data-filter-value="A.2"]>option[data-filter-value="A.2"] {
+    display: unset;
+}
+
+.sel-collapse[data-filter-value="A.3"]>option[data-filter-value="A.3"] {
+    display: unset;
+}
+
+.sel-collapse[data-filter-value="B.1"]>option[data-filter-value="B.1"] {
+    display: unset;
+}
+
+.sel-collapse[data-filter-value="B.2"]>option[data-filter-value="B.2"] {
+    display: unset;
+}
+
+.sel-collapse[data-filter-value="B.3"]>option[data-filter-value="B.3"] {
+    display: unset;
+}
